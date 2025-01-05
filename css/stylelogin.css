@@ -4,4 +4,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --azulescuro: #10454F;
+    --azulclaro: #506266;
+    --cinza: #818274;
+    --verdeclaro: #A3AB78;
+    --verdelimao: #BDE038;
+}
+
+body {
+    background-color: var(--azulescuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.arealogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-form {
+    background-color: var(--azulclaro);
+    padding: 40px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--verdelimao);
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: var(--cinza);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    color: var(--cinza);
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--cinza);
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: var(--verdelimao);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--verdelimao);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--verdeclaro);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: var(--verdelimao);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }

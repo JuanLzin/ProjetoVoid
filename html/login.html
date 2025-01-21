@@ -10,9 +10,12 @@
     <main>
         <!-- Área de login -->
         <div class="arealogin">
-            <form class="login-form" action="../js/login-process.js">
+            <form class="login-form" id="loginForm">
                 <h1>Seja bem-vindo(a)!</h1>
                 <p>Coloque suas informações de login.</p>
+
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Coloque o seu nome completo" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Entre com o seu email" required>
@@ -21,7 +24,7 @@
                 <input type="password" id="password" placeholder="Entre com a sua palavra-chave" required>
 
                 <!-- Botão para entrar -->
-                <button type="submit">Login</button>
+                <button id="loginButton" type="submit">Login</button>
 
                 <!-- Caixa de seleção para "lembrar senha" -->
                 <div class="remember-me">

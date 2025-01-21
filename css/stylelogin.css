@@ -8,11 +8,11 @@
 }
 
 :root {
-    --azulescuro: #10454F;
-    --azulclaro: #506266;
-    --cinza: #818274;
-    --verdeclaro: #A3AB78;
-    --verdelimao: #BDE038;
+    --azulescuro: #001E51;
+    --roxoclaro: #A600FF;
+    --roxo: #3E00FF;
+    --azulclaro: #10D4FF;
+    --branco: #FFFFFF;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 .login-form {
-    background-color: var(--azulclaro);
+    background-color: var(--branco);
     padding: 40px;
     width: 400px;
     display: flex;
@@ -43,42 +43,42 @@ body {
 }
 
 h1 {
-    color: var(--verdelimao);
+    color: var(--azulescuro);
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 p {
-    color: var(--cinza);
+    color: var(--azulescuro);
     text-align: center;
     margin-bottom: 20px;
 }
 
 label {
-    color: var(--cinza);
+    color: var(--azulescuro);
     margin-bottom: 5px;
     font-size: 14px;
 }
 
-input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"], input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 6px;
-    border: 1px solid var(--cinza);
+    border: 1px solid var(--azulclaro);
     outline: none;
     font-size: 16px;
 }
 
-input[type="email"]:focus, input[type="password"]:focus {
-    border-color: var(--verdelimao);
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus{
+    border-color: var(--roxo);
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: var(--verdelimao);
+    background-color: var(--roxo);
     border: none;
     border-radius: 6px;
     color: white;
@@ -88,17 +88,23 @@ button {
 }
 
 button:hover {
-    background-color: var(--verdeclaro);
+    background-color: var(--azulclaro);
 }
 
 .remember-me {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px 20px;
 }
 
 .remember-me input {
     margin-right: 10px;
+}
+
+.remember-me label {
+    font-size: 1em;
+    position: relative;
+    top: 2px;
 }
 
 p {
